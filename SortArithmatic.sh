@@ -28,4 +28,10 @@ echo "All result In      Array"   : ${arr[@]}
 echo "All Index  Of      Array  " : ${!arr[@]}
 echo "Total Lenght Of    Array"   : ${#arr[@]}
 
+for i in $( echo " ${arr[0]} ${arr[1]} ${arr[2]} ${arr[3]} " );
+do
 
+  echo "Output in descending Order": $i
+
+done |sort -r
+ 
