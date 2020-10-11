@@ -14,6 +14,18 @@ Result[4]="$((($a%$b)+$c))"
 
 echo "All result In  Dictionary"  : ${Result[@]}
 echo "All Index  Of  Dictionary"  : ${!Result[@]}
-echo "Total Lenght Of  Dictionary": ${#Result[@]}
+echo "Total Lenght Of Dictionary" : ${#Result[@]}
+
+declare -a arr
+j=1
+for ((i=0; i<${#Result[@]}; i++))
+do
+       arr[$i]=${Result[$j]}
+          ((j++))
+done
+
+echo "All result In      Array"   : ${arr[@]}
+echo "All Index  Of      Array  " : ${!arr[@]}
+echo "Total Lenght Of    Array"   : ${#arr[@]}
 
 
