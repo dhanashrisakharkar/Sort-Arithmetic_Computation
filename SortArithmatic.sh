@@ -7,4 +7,6 @@ read -p "Enter the First Value  :" a
 read -p "Enter the Secong Value :" b
 read -p "Enter the Third Value  :" c
 
-echo  "All Three Values are" : $a : $b : $c
+OUTPUT=$(($a+($b*$c)))
+
+echo  "Output of Arithmetic Computation is" : $OUTPUT
