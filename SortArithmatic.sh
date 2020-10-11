@@ -7,6 +7,6 @@ read -p "Enter the Third Value  :" c
 
 
 
-OUTPUT=$(($a+($b/$c)))
+OUTPUT=$((($a%$b)+$c))
 
 echo  "Output of Arithmetic Computation is" : $OUTPUT
